@@ -2,7 +2,7 @@
 
 ## git clone
 
-<code>git clone https://github.com/BlackFxTalon/NinJi-gulp-template-2021</code>
+<code>git clone https://github.com/BlackFxTalon/test-task-inline</code>
 
 ## install dependencies
 
