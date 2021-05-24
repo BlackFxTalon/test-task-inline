@@ -78,5 +78,28 @@
     }
 }
 .back-link {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 14px, 15px);
+    line-height: 20px;
+    color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &::before {
+        content: "";
+        background: url(../img/sprites/arrow-left.svg) no-repeat center/cover;
+        width: 15px;
+        height: 12px;
+        margin-right: 5px;
+    }
 }
 /* index styles - end */
