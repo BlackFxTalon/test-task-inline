@@ -1,3 +1,39 @@
 /* index styles - start */
+.breadcrumbs {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
 
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        margin-top: 0;
+        padding-left: 0;
+        color: black;
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--grey-color);
+        line-height: 16px;
+        font-size: clamp(8px, 12px, 14px);
+    }
+    &__link:hover,
+    &__link:active,
+    &__link:focus {
+        text-decoration: underline;
+    }
+    &__link--active {
+        color: black;
+    }
+    &__link--active:hover,
+    &__link--active:active,
+    &__link--active:focus {
+        text-decoration: none;
+    }
+    &__separator {
+        color: var(--grey-color);
+        padding: 0 5px;
+    }
+}
 /* index styles - end */
