@@ -32,6 +32,10 @@ img {
 button {
     cursor: pointer;
 }
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
 .container {
     width: 100%;
     margin-left: auto;
