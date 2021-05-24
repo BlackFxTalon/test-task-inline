@@ -11,21 +11,18 @@ gulp.task("sprites", () => {
         .src(paths.sprites.src)
         .pipe(
             svg({
-                shape: {
-                    dest: "intermediate-svg",
-                },
                 mode: {
                     stack: {
                         sprite: "../sprite.svg",
                     },
                 },
-            })
+            }),
         )
         .pipe(gulp.dest(paths.sprites.dist))
         .pipe(
             debug({
                 title: "Sprites",
-            })
+            }),
         )
         .on("end", browsersync.reload);
 });
