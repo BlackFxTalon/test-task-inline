@@ -7,6 +7,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>index page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -34,9 +35,9 @@
                 </fieldset>
             </form>
             <a href="#" class="back-link">К каталогу компаний</a>
-            <h2 class="title title--approved">Преображенский МПК, ООО</h2>
+            <h2 class="title comp__title title--approved">Преображенский МПК, ООО</h2>
             <div class="comp-popover">
-                <h2 class="comp-popover__title">Преображенский МПК, ООО</h2>
+                <h2 class="title comp-popover__title">Преображенский МПК, ООО</h2>
                 <p class="comp-popover__approve-text">
                     Реквизиты компании проверены банковским переводом.
                 </p>
@@ -58,10 +59,10 @@
             <div class="main-info">
                 <div class="main-info__left-part">
                     <section class="last-nots">
-                        <h3 class="last-nots__title">
+                        <h3 class="title last-nots__title">
                             Последние объявления сотрудников компании
                         </h3>
-                        <table class="last-nots__table">
+                        <table class="title last-nots__table">
                             <thead>
                                 <tr>
                                     <td>&nbsp;</td>
@@ -204,10 +205,77 @@
                             </tbody>
                         </table>
                     </section>
+                    <section class="product-photo">
+                        <h3 class="title product-photo__title">Фото продукции</h3>
+                        <div class="product-photo__gallery">
+                            <a href="img/prod-img-1.jpg" data-fancybox="gallery" data-caption="prod-img-1">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-1.webp">
+                                    <img src="img/prod-img-1.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-2.jpg" data-fancybox="gallery" data-caption="prod-img-2">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-2.webp">
+                                    <img src="img/prod-img-2.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-3.jpg" data-fancybox="gallery" data-caption="prod-img-3">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-3.webp">
+                                    <img src="img/prod-img-3.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-4.jpg" data-fancybox="gallery" data-caption="prod-img-4">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-4.webp">
+                                    <img src="img/prod-img-4.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-5.jpg" data-fancybox="gallery" data-caption="prod-img-5">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-5.webp">
+                                    <img src="img/prod-img-5.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-6.jpg" data-fancybox="gallery" data-caption="prod-img-6">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-6.webp">
+                                    <img src="img/prod-img-6.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-7.jpg" data-fancybox="gallery" data-caption="prod-img-7">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-7.webp">
+                                    <img src="img/prod-img-7.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-8.jpg" data-fancybox="gallery" data-caption="prod-img-8">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-8.webp">
+                                    <img src="img/prod-img-8.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-9.jpg" data-fancybox="gallery" data-caption="prod-img-9">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-9.webp">
+                                    <img src="img/prod-img-9.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                            <a href="img/prod-img-10.jpg" data-fancybox="gallery" data-caption="prod-img-10">
+                                <picture>
+                                    <source type="image/webp" srcset="img/prod-img-10.webp">
+                                    <img src="img/prod-img-10.jpg" loading="lazy" decoding="async" alt="image">
+                                </picture>
+                            </a>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
