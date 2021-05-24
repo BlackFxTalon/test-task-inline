@@ -123,6 +123,9 @@
     @include media-custom-max(992px) {
         white-space: unset;
     }
+    @include media-custom-max(768px) {
+        text-align: center;
+    }
 }
 .comp__title {
     font-size: clamp(20px, 24px, 25px);
@@ -430,6 +433,18 @@
     }
 }
 .comp-detail-info {
+    &__picture {
+        @include media-custom-max(768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__nav {
+        @include media-custom-max(768px) {
+            text-align: center;
+        }
+    }
     @include media-custom-max(1025px) {
         margin-top: 15px;
     }
