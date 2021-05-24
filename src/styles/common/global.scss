@@ -31,8 +31,6 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    // padding-left: toRem(33);
-    // padding-right: toRem(20);
 
     @include media-small() {
         max-width: 100%;
@@ -48,6 +46,11 @@ img {
     }
     @include media-Extra-extra-large() {
         max-width: 82rem;
+    }
+
+    @include media-custom-max(1365px) {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
