@@ -263,6 +263,35 @@
         color: white;
     }
 }
+.main-info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 42px;
+
+    @include media-custom-max(1025px) {
+        margin-top: 15px;
+    }
+
+    &__left-part {
+        flex: 1 0 auto;
+        width: 55%;
+        margin-right: 20px;
+
+        @include media-custom-max(1025px) {
+            width: 100%;
+        }
+    }
+
+    &__right-part {
+        flex: 1 0 auto;
+        width: 40%;
+
+        @include media-custom-max(1025px) {
+            width: 100%;
+        }
+    }
+}
 .last-nots {
     &__title {
         font-size: clamp(16px, 19px, 20px);
@@ -327,6 +356,12 @@
 
     &__descr {
         color: var(--blue-color);
+        text-decoration: none;
+    }
+    &__descr:hover,
+    &__descr:active,
+    &__descr:focus {
+        text-decoration: underline;
     }
 
     &__time,
@@ -373,10 +408,77 @@
 .product-photo {
     margin-top: 48px;
 
+    @include media-custom-max(1025px) {
+        margin-top: 15px;
+    }
+
     &__title {
         border-bottom: 1px solid var(--white-color--darker);
         padding-bottom: 8px;
         margin-bottom: 16px;
+    }
+
+    &__img-link:not(:first-child) {
+        @include media-custom-max(768px) {
+            display: none;
+        }
+    }
+    &__img {
+        @include media-custom-max(768px) {
+            width: 100%;
+        }
+    }
+}
+.comp-detail-info {
+    @include media-custom-max(1025px) {
+        margin-top: 15px;
+    }
+    &__img {
+        width: 180px;
+        margin-bottom: 16px;
+
+        @include media-custom-max(1024px) {
+            width: 120px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: clamp(12px, 14px, 15px);
+        line-height: 20px;
+    }
+
+    &__list-item {
+        padding-bottom: 8px;
+    }
+
+    &__item-descr {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+    }
+
+    &__item-info {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+    }
+
+    &__nested-list {
+        list-style: none;
+        padding-left: 0;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: clamp(12px, 14px, 15px);
+        line-height: 20px;
+        padding-bottom: 8px;
+    }
+
+    &__nested-item {
+        padding-bottom: 5px;
+    }
+    &__nested-item::before {
+        content: "—";
+        margin-right: 3px;
     }
 }
 /* index styles - end */
