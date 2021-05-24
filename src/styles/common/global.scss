@@ -31,8 +31,8 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: toRem(33);
-    padding-right: toRem(20);
+    // padding-left: toRem(33);
+    // padding-right: toRem(20);
 
     @include media-small() {
         max-width: 100%;
