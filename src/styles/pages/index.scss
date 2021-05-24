@@ -36,4 +36,41 @@
         padding: 0 5px;
     }
 }
+.search-form {
+    &__fieldset {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: 2px solid var(--blue-color);
+        border-radius: 3px;
+        margin-right: 0;
+    }
+    &__input {
+        border-color: transparent;
+        background-color: transparent;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        flex: 1 0 auto;
+    }
+    &__input::placeholder {
+        font-size: 14px;
+        color: var(--grey-color--lighter);
+    }
+    &__btn {
+        background: url(../img/sprites/search-icon.svg) no-repeat center/24px;
+        background-color: var(--blue-color);
+        border-color: transparent;
+        flex-basis: 5%;
+        align-self: stretch;
+        padding: 0;
+
+        @include media-custom-max(992px) {
+            flex-basis: 15%;
+        }
+        @include media-custom-max(768px) {
+            flex-basis: 20%;
+        }
+    }
+}
 /* index styles - end */
