@@ -54,7 +54,7 @@
         flex: 1 0 auto;
     }
     &__input::placeholder {
-        font-size: 14px;
+        font-size: clamp(12px, 14px, 15px);
         color: var(--grey-color--lighter);
     }
     &__btn {
@@ -72,5 +72,7 @@
             flex-basis: 20%;
         }
     }
+}
+.back-link {
 }
 /* index styles - end */
