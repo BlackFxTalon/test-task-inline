@@ -307,13 +307,14 @@
         font-size: 12px;
         line-height: 16px;
         border-collapse: collapse;
+        width: 100%;
 
         thead {
             background-color: #f0f0f0;
             border-radius: 3px;
         }
 
-        thead td {
+        thead th {
             color: var(--grey-color--darker);
             padding-top: 8px;
             padding-bottom: 8px;
@@ -480,5 +481,8 @@
         content: "—";
         margin-right: 3px;
     }
+}
+.table--responsive {
+    overflow-x: auto;
 }
 /* index styles - end */
