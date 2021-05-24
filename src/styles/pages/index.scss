@@ -318,6 +318,7 @@
             color: var(--grey-color--darker);
             padding-top: 8px;
             padding-bottom: 8px;
+            font-weight: 400;
         }
 
         tbody tr {
@@ -332,8 +333,6 @@
     &__time-ico {
         width: 16px;
         height: 16px;
-        margin-left: 20px;
-        margin-top: 3px;
 
         path {
             fill: var(--grey-color--darker);
@@ -380,7 +379,7 @@
     }
 
     &__img {
-        width: 30px;
+        max-width: 30px;
         max-height: 40px;
     }
     &__publisher-info {
