@@ -103,4 +103,22 @@
         margin-right: 5px;
     }
 }
+.title {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 24px, 25px);
+    line-height: 32px;
+    color: var(--black-color);
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    &--approved::before {
+        content: "";
+        background: url(../img/sprites/approval-icon.svg) no-repeat center/cover;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+}
 /* index styles - end */
