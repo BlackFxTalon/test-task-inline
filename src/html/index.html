@@ -12,49 +12,202 @@
 
 <body>
     @@include("../blocks/modules/header/header.html")
-    <div class="container">
-        <nav class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                <li class="breadcrumbs__item">
-                    <span class="breadcrumbs__separator">/</span>
-                </li>
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"> Мясные компании в Москве</a></li>
-                <li class="breadcrumbs__item">
-                    <span class="breadcrumbs__separator">/</span>
-                </li>
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Преображенский МПК, ООО</a></li>
-            </ul>
-        </nav>
-        <form class="search-form" action="#">
-            <fieldset class="search-form__fieldset">
-                <input type="text" class="search-form__input" placeholder="Поиск по компаниям">
-                <button class="search-form__btn" type="submit"></button>
-            </fieldset>
-        </form>
-        <a href="#" class="back-link">К каталогу компаний</a>
-        <h2 class="title title--approved">Преображенский МПК, ООО</h2>
-        <div class="comp-popover">
-            <h2 class="comp-popover__title">Преображенский МПК, ООО</h2>
-            <p class="comp-popover__approve-text">
-                Реквизиты компании проверены банковским переводом.
-            </p>
-        </div>
-        <div class="add-info">
-            <div class="add-info__left">
-                <div class="views">
-                    <div class="views__right">
-                        <p class="views__count">578</p>
-                        <span class="views__counter">(+2)</span>
-                    </div>
-                </div>
-                <a href="#" class="leave-comment">
-                    Оставить отзыв
-                </a>
+    <main class="main">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__separator">/</span>
+                    </li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"> Мясные компании в Москве</a></li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__separator">/</span>
+                    </li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Преображенский МПК, ООО</a></li>
+                </ul>
+            </nav>
+            <form class="search-form" action="#">
+                <fieldset class="search-form__fieldset">
+                    <input type="text" class="search-form__input" placeholder="Поиск по компаниям">
+                    <button class="search-form__btn" type="submit"></button>
+                </fieldset>
+            </form>
+            <a href="#" class="back-link">К каталогу компаний</a>
+            <h2 class="title title--approved">Преображенский МПК, ООО</h2>
+            <div class="comp-popover">
+                <h2 class="comp-popover__title">Преображенский МПК, ООО</h2>
+                <p class="comp-popover__approve-text">
+                    Реквизиты компании проверены банковским переводом.
+                </p>
             </div>
-            <button type="button" class="btn btn--green">Работаете в этой компании?</button>
+            <div class="add-info">
+                <div class="add-info__left">
+                    <div class="views">
+                        <div class="views__right">
+                            <p class="views__count">578</p>
+                            <span class="views__counter">(+2)</span>
+                        </div>
+                    </div>
+                    <a href="#" class="leave-comment">
+                        Оставить отзыв
+                    </a>
+                </div>
+                <button type="button" class="btn btn--green">Работаете в этой компании?</button>
+            </div>
+            <div class="main-info">
+                <div class="main-info__left-part">
+                    <section class="last-nots">
+                        <h3 class="last-nots__title">
+                            Последние объявления сотрудников компании
+                        </h3>
+                        <table class="last-nots__table">
+                            <thead>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>Объявление</td>
+                                    <td>Время</td>
+                                    <td><svg class="last-nots__time-ico" width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 5.17908C5.28375 5.17908 1.5625 10.0003 1.5625 10.0003C1.5625 10.0003 5.28375 14.8222 10 14.8222C13.6062 14.8222 18.4375 10.0003 18.4375 10.0003C18.4375 10.0003 13.6062 5.17908 10 5.17908ZM10 13.0041C8.34375 13.0041 6.99563 11.6566 6.99563 10.0003C6.99563 8.34408 8.34375 6.99595 10 6.99595C11.6562 6.99595 13.0044 8.34408 13.0044 10.0003C13.0044 11.6566 11.6562 13.0047 10 13.0047V13.0041ZM10 8.24658C9.76695 8.24218 9.53536 8.28428 9.31877 8.37042C9.10218 8.45656 8.90494 8.58502 8.73857 8.74828C8.5722 8.91153 8.44004 9.10632 8.34983 9.32124C8.25961 9.53617 8.21314 9.76692 8.21314 10C8.21314 10.2331 8.25961 10.4639 8.34983 10.6788C8.44004 10.8937 8.5722 11.0885 8.73857 11.2518C8.90494 11.415 9.10218 11.5435 9.31877 11.6296C9.53536 11.7158 9.76695 11.7579 10 11.7535C10.4593 11.7448 10.8969 11.5562 11.2186 11.2283C11.5404 10.9005 11.7206 10.4594 11.7206 10C11.7206 9.54063 11.5404 9.09958 11.2186 8.77169C10.8969 8.4438 10.4593 8.25525 10 8.24658Z" fill="#999999" />
+                                        </svg>
+                                    </td>
+                                    <td>Опубликовал</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--sell">Продам</span></td>
+                                    <td><span class="last-nots__descr">Желудки куриные очищенные 60 руб.</span></td>
+                                    <td><span class="last-nots__time">5 фев</span></td>
+                                    <td><span class="last-nots__views">155</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/placeholder-img.webp">
+                                                <img class="last-nots__img" src="img/placeholder-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Татьяна Лобач</p>
+                                                <p class="last-nots__publisher-comp">Орехово-Зуевский мясокомб...</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--sell">Продам</span></td>
+                                    <td><span class="last-nots__descr">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</span></td>
+                                    <td><span class="last-nots__time">27 янв</span></td>
+                                    <td><span class="last-nots__views">185</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/placeholder-img.webp">
+                                                <img class="last-nots__img" src="img/placeholder-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Татьяна Лобач</p>
+                                                <p class="last-nots__publisher-comp">Орехово-Зуевский мясокомб...</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--buy">Куплю</span></td>
+                                    <td><span class="last-nots__descr">Курица, Индейка, Говядина, Свинина от МК</span></td>
+                                    <td><span class="last-nots__time">21 апр</span></td>
+                                    <td><span class="last-nots__views">42609</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/placeholder-img.webp">
+                                                <img class="last-nots__img" src="img/placeholder-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Татьяна Лобач</p>
+                                                <p class="last-nots__publisher-comp">Орехово-Зуевский мясокомб...</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--buy">Куплю</span></td>
+                                    <td><span class="last-nots__descr">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</span></td>
+                                    <td><span class="last-nots__time">27 фев</span></td>
+                                    <td><span class="last-nots__views">319</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/placeholder-img.webp">
+                                                <img class="last-nots__img" src="img/placeholder-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Татьяна Лобач</p>
+                                                <p class="last-nots__publisher-comp">Орехово-Зуевский мясокомб...</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--sell">Продам</span></td>
+                                    <td><span class="last-nots__descr">Курица, Индейка, Говядина, Свинина от МК</span></td>
+                                    <td><span class="last-nots__time">7 фев</span></td>
+                                    <td><span class="last-nots__views">10072</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/placeholder-img.webp">
+                                                <img class="last-nots__img" src="img/placeholder-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Татьяна Лобач</p>
+                                                <p class="last-nots__publisher-comp">Орехово-Зуевский мясокомб...</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--sell">Продам</span></td>
+                                    <td><span class="last-nots__descr">Фарш куриный ММО люкс 40руб/кг</span></td>
+                                    <td><span class="last-nots__time">7 фев</span></td>
+                                    <td><span class="last-nots__views">300</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/last-nots-img.webp">
+                                                <img class="last-nots__img" src="img/last-nots-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Виталий Пчелинцев</p>
+                                                <p class="last-nots__publisher-comp">ООО ОКЕАНФИШ</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="last-nots__status last-nots__status--sell">Продам</span></td>
+                                    <td><span class="last-nots__descr">Голень ЦБ ГОСТ 75 руб/кг</span></td>
+                                    <td><span class="last-nots__time">7 фев</span></td>
+                                    <td><span class="last-nots__views">319</span></td>
+                                    <td>
+                                        <div class="last-nots__publisher">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/last-nots-img.webp">
+                                                <img class="last-nots__img" src="img/last-nots-img.jpg" loading="lazy" decoding="async" alt="image">
+                                            </picture>
+                                            <div class="last-nots__publisher-info">
+                                                <p class="last-nots__publisher-name">Виталий Пчелинцев</p>
+                                                <p class="last-nots__publisher-comp">ООО ОКЕАНФИШ</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="js/main.js"></script>
 </body>
 

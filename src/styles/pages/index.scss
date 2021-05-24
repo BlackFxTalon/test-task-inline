@@ -220,6 +220,10 @@
         height: 20px;
         margin-right: 5px;
     }
+
+    @include media-custom-max(518px) {
+        margin-top: 0;
+    }
 }
 .add-info,
 .add-info__left {
@@ -258,6 +262,116 @@
     &--green:focus {
         background-color: var(--green-color);
         color: white;
+    }
+}
+.last-nots {
+    &__title {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: clamp(16px, 19px, 20px);
+        line-height: 28px;
+        color: var(--black-color);
+        margin-bottom: 8px;
+        border-bottom: 1px solid var((--white-color--darker));
+        padding-bottom: 16px;
+    }
+
+    &__table {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        border-collapse: collapse;
+
+        thead {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        thead td {
+            color: var(--grey-color--darker);
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid var(--white-color--darker);
+        }
+        tbody td {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+
+    &__time-ico {
+        width: 16px;
+        height: 16px;
+        margin-left: 20px;
+        margin-top: 3px;
+
+        path {
+            fill: var(--grey-color--darker);
+        }
+    }
+
+    &__status {
+        border-radius: 3px;
+        color: white;
+        padding: 4px;
+        text-align: center;
+    }
+
+    &__status--sell {
+        background-color: var(--blue-color--lighter);
+    }
+
+    &__status--buy {
+        background-color: var(--orange-color);
+    }
+
+    &__descr {
+        color: var(--blue-color);
+    }
+
+    &__time,
+    &__views {
+        color: var(--grey-color--darker);
+    }
+
+    &__views {
+        text-align: right;
+    }
+
+    &__publisher {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 30px;
+        max-height: 40px;
+    }
+    &__publisher-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+    }
+
+    &__publisher-name {
+        color: var(--blue-color);
+        margin: 0;
+    }
+    &__publisher-comp {
+        color: var(--grey-color--lighter);
+        margin: 0;
+    }
+
+    &__status,
+    &__descr,
+    &__time,
+    &__views {
+        margin-right: 16px;
+        display: block;
     }
 }
 /* index styles - end */
